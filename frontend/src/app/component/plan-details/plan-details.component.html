@@ -1,0 +1,23 @@
+<div class="card text-center" style="width: 30rem;">
+  <img class="card-img-top" src="" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{plan.planName}}</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Plan Id: {{plan.planId}}</li>
+    <li class="list-group-item">Type: {{plan.type}}</li>
+    <li class="list-group-item">Type: {{plan.price}}</li>
+    <ul class="list-group list-group-flush">
+      <div *ngFor="let p of plan.description">
+        {{p}}
+      </div>
+    </ul>
+    <li class="list-group-item">Number Of Channels: {{plan.numberChannels}}</li>
+  </ul>
+
+  <div class="card-body">
+    <button type="button" class="btn btn-success btn-lg">
+      Apply
+    </button>
+  </div>
+</div>
